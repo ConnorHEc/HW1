@@ -16,7 +16,7 @@ public class HelloWorldAssingmentComplete : MonoBehaviour
         //      Hello World!
         
         // Write (1) here.
-
+        Debug.Log("Hello world");
 
         // 2
         // Write a statement that ADDS the values of bonus and attack, and assigns the value to attack.
@@ -27,7 +27,7 @@ public class HelloWorldAssingmentComplete : MonoBehaviour
         float bonus = 5.0f;
 
         // Write (2) here.
-
+        attack += bonus;
         Debug.Log("New attack : " + attack); 
 
 
@@ -40,7 +40,7 @@ public class HelloWorldAssingmentComplete : MonoBehaviour
         bool attackSuccessful = false;
 
         // Write (3) here.
-
+        attackSuccessful = attack > defense;
         Debug.Log("Is attack higher than defense? : " + attackSuccessful);
 
 
@@ -65,7 +65,17 @@ public class HelloWorldAssingmentComplete : MonoBehaviour
         string failureMessage = "Attack failed! Player health : ";
 
         // Write (4) here.
+        if (attackSuccessful)
+        {
+            enemyHealth -= playerDamage;
+            Debug.Log(successMessage + enemyHealth);
 
+        }
+        else
+        {
+            playerHealth -= enemyDamage;
+            Debug.Log(failureMessage + playerHealth);
+        }
 
         // 5
         // Write BRANCHING statements that do the following:
@@ -83,6 +93,18 @@ public class HelloWorldAssingmentComplete : MonoBehaviour
         string enemyAlive = "The enemy is still alive!";
 
         // Write (5) here.
+        if (attack > defense + 10 && enemyHealth <= 0)
+        {
+            Debug.Log(criticalSuccess);
+        }
+        else if(enemyHealth <= 0)
+        {
+            Debug.Log(normalSuccess);
+        }
+        else
+        {
+            Debug.Log(enemyAlive);
+        }
     }
 
 }
