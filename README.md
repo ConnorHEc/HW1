@@ -1,3 +1,4 @@
 # HW1 Devlog
 
 Put your Devlog here!
+This course was my first exposure to C# programming, and a lot of the syntax was unfamiliar. However, I had prior experience programming in python, which helped a lot in building the structure and logic of the code. The first time I tried to run a program I was unable to do so due to formatting errors, which I was able to fix easily with the help of vscode's programming assistant. Later when I tried to run the script on unity I had some problems with the console not outputting the content, then I realized that I was executing the wrong project, after re-reading the assignment guide I found the correct target for the script in unity and managed to output the debug content.
