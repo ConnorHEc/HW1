@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "HW1.sln"
+    "dotnet.defaultSolution": "hw1-hello-world-ConnorHEc.sln"
 }
